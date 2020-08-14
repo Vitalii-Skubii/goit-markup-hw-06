@@ -13,6 +13,70 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-- Модальное окно -->
+    <div class="modal-overlay">
+      <div class="modal-form">
+        <svg
+          class="modal-close"
+          width="30"
+          height="30"
+          viewBox="0 0 30 30"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="15" cy="15" r="15" fill="white" />
+          <circle
+            cx="15"
+            cy="15"
+            r="14.5"
+            stroke="black"
+            stroke-opacity="0.1"
+          />
+          <path
+            d="M21 10.1079L19.8921 9L15.5 13.3921L11.1079 9L10 10.1079L14.3921 14.5L10 18.8921L11.1079 20L15.5 15.6079L19.8921 20L21 18.8921L16.6079 14.5L21 10.1079Z"
+            fill="black"
+          />
+        </svg>
+
+        <form action="">
+          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+
+          <label class="modal-label">
+            <input type="text" class="modal-input" placeholder=" " />
+            <span class="modal-span-label"> Имя </span>
+            <svg class="modal-icon" width="12" height="12">
+              <use href="./images/sprite.svg#icon-contact"></use>
+            </svg>
+          </label>
+
+          <label class="modal-label">
+            <input type="tel" class="modal-input" placeholder=" " />
+            <span class="modal-span-label"> Телефон </span>
+
+            <svg class="modal-icon" width="14" height="14">
+              <use href="./images/sprite.svg#icon-ear-phone"></use>
+            </svg>
+          </label>
+
+          <label class="modal-label">
+            <input type="e-mail" class="modal-input" placeholder=" " />
+            <span class="modal-span-label">Почта</span>
+
+            <svg class="modal-icon" width="16" height="12">
+              <use href="./images/sprite.svg#icon-mail"></use>
+            </svg>
+          </label>
+
+          <textarea
+            class="modal-textarea"
+            name=""
+            id=""
+            placeholder="Коментарий"
+          ></textarea>
+          <checkbox></checkbox>
+        </form>
+      </div>
+    </div>
     <header class="header">
       <div class="container">
         <nav class="nav">
@@ -58,22 +122,6 @@
             для вашего бизнеса
           </h1>
           <button class="hero-button">Заказать услугу</button>
-        </div>
-        <div class="modal-form">
-          <form action="">
-            <h3></h3>
-            <lable>
-              <input type="text" />
-            </lable>
-            <lable>
-              <input type="text" />
-            </lable>
-            <lable>
-              <input type="text" />
-            </lable>
-            <textarea name="" id=""></textarea>
-            <checkbox></checkbox>
-          </form>
         </div>
       </section>
       <!-- Преимущества -->
